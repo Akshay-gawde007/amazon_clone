@@ -10,6 +10,7 @@ const Cart = () => {
     const cartItems = useSelector((state) => state.cart.items);
 
     let a = 0;
+    // eslint-disable-next-line
     let cost = cartItems.map((item)=>{return  a = a+ item.price})
 
     useEffect(() => {
@@ -40,7 +41,7 @@ const Cart = () => {
                                   <div className="cartItemBlock">
                                     <div className="cartItemLeftBlock">
                                        <div className="cartItemLeftBlockImage">
-                                           <img className="cartItemLeftBlockImg" src={item.imageUrl}/>
+                                           <img className="cartItemLeftBlockImg" src={item.imageUrl} alt=" "/>
                                            </div>
 
                                <div className="cartItemLeftBlockDetails">

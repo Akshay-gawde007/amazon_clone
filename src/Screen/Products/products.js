@@ -3,14 +3,14 @@ import './products.css';
 import StarOutlineIcon from '@mui/icons-material/StarOutline';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import productDetail from './products.json';
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/actions/actions';
 import { toast,ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Products = () => {
 
     const dispatch = useDispatch();
-    const cartItems = useSelector((state) => state.cart.items);
+   
     const handleAddToCart=(item)=>{
 
         toast.success("Added To Cart", {
@@ -105,7 +105,7 @@ const Products = () => {
 
                 <div className="productsPageMainRight">
                     <div className="productsPageMainRightTopBanner">
-                        1-5 of 5 results for <span className='productsPageMainRightTopBannerSpan'>Macbooks</span>
+                        1-5 of 5 results <span className='productsPageMainRightTopBannerSpan'></span>
                     </div>
 
                     <div className="itemsImageProductPage">
@@ -116,7 +116,7 @@ const Products = () => {
 
                                     <div className="itemsImageProductPageOne"key={item.id}>
                         <div className="imgBlockitemsImageProductPageOne">
-                            <img src={item.imageUrl} className="productImageProduct"/>
+                            <img src={item.imageUrl} alt=" " className="productImageProduct"/>
 
                             </div>
 

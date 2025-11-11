@@ -4,7 +4,7 @@ import homeBannerItemProduct from '../../../homeProduct.json';
 const HomeBanner = () => {
     return (
         <div className="homeBanner">
-            <img className='homeBannerimg' src='https://m.media-amazon.com/images/I/61Dr+oVuClL._SX3000_.jpg' />
+            <img className='homeBannerimg' src='https://m.media-amazon.com/images/I/61Dr+oVuClL._SX3000_.jpg'  alt=" "/>
             <div className="grayBackgroundHomeBanner"></div>
 
             <div className="homeBannerItemDiv">
@@ -19,7 +19,7 @@ const HomeBanner = () => {
                                         item.imgs.map((it, ind )=> {
                                             return (
                                                 <div className="imgBannerHomeDiv">
-                                                    <img className='imgBannerHomeDivImg' src={it} />
+                                                    <img className='imgBannerHomeDivImg' src={it} alt=" " />
                                                   
                                                 </div>
                                             );
